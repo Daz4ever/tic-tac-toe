@@ -1,0 +1,89 @@
+body {
+
+}
+
+.mytable {
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 200px;
+  border-collapse: collapse;
+}
+
+.boxes {
+  border: 10px solid #D0CCD0;
+  text-align: center;
+
+}
+
+.square {
+  border: 0;
+  color: white;
+  background-color: white;
+  font-size: 5em;
+  font-weight: 300;
+  background-color: white;
+  height: 140px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#playerwins {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: arial;
+  position: absolute;
+  top:0;
+
+}
+
+#continue {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: arial;
+  position: absolute;
+  top:0;
+  margin-top:100px;
+  display: none;
+
+}
+
+.score {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: arial;
+  position: absolute;
+  top:0;
+  margin-top:200px;
+}
+
+.boxes9 {
+  border-right: none;
+  border-bottom: none;
+}
+.boxes8 {
+  border-bottom: none;
+}
+.boxes7 {
+  border-bottom: none;
+  border-left: none;
+}
+.boxes6 {
+  border-right: none;
+}
+.boxes4 {
+  border-left: none;
+}
+.boxes3{
+  border-top: none;
+  border-right: none;
+}
+.boxes2{
+  border-top: none;
+}
+.boxes1{
+  border-top: none;
+  border-left: none;
+}
