@@ -3,8 +3,10 @@
     var turn = false;
     var xcounter = 0;
     var ycounter = 0;
+    var tiegamecounter = 0;
 
         $('.square').click(function() {
+
 
           if (turn === false) {
             if ($(this).text() === '') {
@@ -19,6 +21,16 @@
 
             turn = false;
           }
+
+          tiegamecounter++;
+          if (tiegamecounter === 9) {
+            $('#playerwins').text('Tie Game');
+            $('#playerwins').css('display', 'block');
+            $('#continue').text("Again?").css({"background-color": "#222", "color": "white", 'border': '10px solid #D0CCD0', 'display': 'block'});
+            $('.square').prop('disabled', true);
+            tiegamecounter = 0;
+          }
+
           var board = [
             [$('#one').text(),$('#two').text(),$('#three').text()],
             [$('#four').text(),$('#five').text(),$('#six').text()],
@@ -31,6 +43,7 @@
             $('#playerwins').css('display', 'block');
             $('#continue').css('display', 'block');
             $('.square').prop('disabled', true);
+            tiegamecounter = 0;
               if(winner === 'X'){
                 $('#continue').text("Again? X > O").css({"background-color": "#CC2936", "color": "white", 'border': '10px solid #D0CCD0'});
                 console.log("winner");
@@ -42,11 +55,12 @@
                 ycounter++;
               }
 
+          }
 
               $('#xscore').text(xcounter.toString());
 
               $('#yscore').text(ycounter.toString());
-          }
+
 
         });
 
