@@ -109,5 +109,5 @@ function tictactoe(board) {
 
    var x = check('X'),
        o = check('O');
-   return x || o;
+   return x || o; 
   }
